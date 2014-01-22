@@ -11,7 +11,7 @@ end
 get '/readings' do
   headers 'Content-Type' => 'text/event-stream'
   stream do |out|
-    MQTT::Client.connect('10.0.1.6') do |c|
+    MQTT::Client.connect('localhost') do |c|
       c.get('readings') do |topic, message|
         out << "data: #{message}\n\n"
       end
