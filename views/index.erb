@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Readings</title>
+
+  <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
+  <link rel="stylesheet" href="/css/application.css">
+
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+</head>
+  <body>
+    <div id="container">
+      <div class="gridster">
+        <ul>
+          <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+          <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$" class="widget widget-number valuation">
+<h1 class="title" data-bind="title">Current Reading</h1>
+
+<h2 class="value" data-bind="current | shortenedNumber | prepend prefix | append suffix">?</h2>
+
+<p class="change-rate">
+  <i data-bind-class="arrow"></i><span data-bind="difference"></span>
+</p>
+
+<p class="more-info" data-bind="moreinfo"></p>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
+
+</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
