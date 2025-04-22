@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'thin'
+gem 'rackup'
+gem 'puma'
 gem 'sinatra'
 gem 'mqtt'
